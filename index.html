@@ -10,7 +10,7 @@
   <body>
     <div class="bigContainer">
       <header>
-        <span><i class="bi bi-list"></i></span>
+        <span><i class="bi bi-list" id="menuIcon"></i></span>
         <nav>
           <ul>
             <li>
@@ -19,7 +19,7 @@
             </li>
             <li>
                 <i class="bi bi-question-circle"></i>
-                <a href="#">About</a>
+                <a href="./templates/about.html">About</a>
             </li>
             <li>
                 <i class="bi bi-box-seam"></i>
@@ -41,8 +41,14 @@
             <span>Programmer</span>
           </div>
           <div class="btn-group">
-            <button>Downoad CV</button>
-            <button>Contact</button>
+            <button>
+              <i class="bi bi-arrow-down-circle"></i>
+              Downoad CV
+            </button>
+            <button>
+              <i class="bi bi-envelope"></i>
+              Contact
+            </button>
           </div>
         </div>
         <div class="devPic">
@@ -50,5 +56,9 @@
         </div>
       </main>
     </div>
+
+
+    <!-- Scripts -->
+    <script src="./scripts/index.js"></script>
   </body>
 </html>
