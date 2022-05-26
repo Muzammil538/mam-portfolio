@@ -239,4 +239,9 @@
     display: block;
     margin: 0px 10px;
   }
+  .bigContainer header span {
+    font-size: 40px;
+    cursor: pointer;
+    margin: 3px;
+  }
 }
