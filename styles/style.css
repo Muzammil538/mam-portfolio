@@ -205,7 +205,7 @@
     box-shadow: none;
   }
   .bigContainer header {
-    width: 15vw;
+    width: 20vw;
   }
   .bigContainer header.active {
     width: 50vw;
