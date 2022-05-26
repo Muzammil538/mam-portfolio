@@ -28,6 +28,9 @@
   cursor: pointer;
   margin: 7px;
 }
+.bigContainer header span .bi-x:hover {
+  color: red;
+}
 .bigContainer header nav ul li,
 .bigContainer header nav ul li a {
   list-style: none;
@@ -35,6 +38,7 @@
   color: #000;
   cursor: pointer;
   font-family: "Ubuntu", sans-serif;
+  display: block;
 }
 .bigContainer header nav {
   display: none;
@@ -42,17 +46,24 @@
 }
 .bigContainer header nav.active {
   display: block;
-  padding: 30px 60px;
+  padding: 30px;
   transition: display 1s ease;
 }
 .bigContainer header nav.active li {
-  padding: 20px 0px;
+  padding: 20px 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition-delay: 2s;
+  width: 100%;
 }
-
+.bigContainer header nav.active li:hover {
+    background-color: #ffffff;
+    color: #000;
+    width: 100%;
+}
+.bigContainer header nav.active li:hover a {
+    color: #06a4ff;
+}
 .bigContainer main {
   display: flex;
   width: 75vw;
@@ -73,10 +84,11 @@
 }
 
 .devStats {
-    display: grid;
-    /* text-align: center; */
-    place-items: center;
-    /* background: #dde6f0; */
+  display: grid;
+  /* text-align: center; */
+  place-items: center;
+  /* background: #dde6f0; */
+  grid-template-columns: auto;
 }
 
 .circular {
@@ -188,5 +200,45 @@
   100% {
     transform: rotate(270deg);
     z-index: 4;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .bigContainer {
+    flex-direction: row;
+    justify-content: initial;
+  }
+  .bigContainer main {
+    width: 100%;
+    position: relative;
+    height: auto;
+    top: 0;
+    left: 0;
+    border-radius: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .bigContainer header {
+    width: 10vw;
+  }
+  .bigContainer header.active {
+    width: 50vw;
+  }
+  .bigContainer header nav.active li {
+    padding: 20px 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  .bigContainer header nav.active li i {
+    display: block;
+  }
+  .bigContainer header nav.active {
+    display: block;
+    padding: 15px 0px;
+
   }
 }
