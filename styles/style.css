@@ -242,6 +242,6 @@
   .bigContainer header span {
     font-size: 40px;
     cursor: pointer;
-    margin: 3px;
+    /* margin: 3px; */
   }
 }
