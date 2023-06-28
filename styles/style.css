@@ -1,0 +1,93 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Oswald:wght@500&family=Roboto+Mono&display=swap');
+
+/* Icons */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+/* Styling */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #F5EFE7;
+  padding: .45rem;
+}
+
+.navbar .top .menu-box {
+  display: none;
+}
+.navbar .top .nav-title h1 {
+  font-family: 'Oswald', sans-serif;
+  cursor: pointer;
+  
+}
+.navbar .nav-links a{
+  color: #000;
+  text-decoration: none;
+  padding: .35rem .85rem;
+  display: inline;
+}
+.navbar .nav-links a:hover {
+  text-decoration: underline;
+}
+
+
+@media screen and (max-width: 780px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .navbar .top .menu-box {
+    display: block;
+  }
+  .navbar .top .menu-box i{
+    font-size: 2rem;
+    font-weight: 400;
+    color: #46458C;
+    cursor: pointer;
+  }
+  .navbar .nav-links {
+    display: none;
+    width: 0;
+    height: 100vh;
+    text-align: left;
+    
+  }
+  .navbar .nav-links.active {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 1rem;
+    width: 100%;
+    animation-name: navLinksMove;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    animation-direction:alternate;
+  }
+  .navbar .nav-links a {
+    padding: 1rem;
+  }
+
+  @keyframes navLinksMove {
+    from{
+      width: 0px;
+      background-color: #fff;
+    }to{
+      width: 100%;
+      background-color: #F5EFE7;
+    }
+  }
+}
