@@ -165,9 +165,13 @@ main section {
 #moreCerti:hover {
   color: #dddada;
 }
-#pop-certi {
-  width: 200px;
-  height: 200px;
+
+#close {
+  font-size: 2rem;
+  text-align: right;
+  width: 100%;
+  padding: 0rem 2rem;
+  cursor: pointer;
 }
 
 
