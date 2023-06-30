@@ -282,7 +282,7 @@ main section {
   }
   .navbar .nav-links a {
     padding: 1rem;
-    font-size: .2em;
+    font-size: 10px;
   }
 
   @keyframes navLinksMove {
@@ -296,7 +296,7 @@ main section {
     }
   }
   main {
-    height: 95vh;
+    height: 100vh;
   }
   /* Profile */
   #profile {
