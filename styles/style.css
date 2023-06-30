@@ -35,7 +35,6 @@
 .navbar .top .nav-title h1 {
   font-family: "Oswald", sans-serif;
   cursor: pointer;
-  font-size: 1rem;
 }
 .navbar .nav-links a {
   color: #000;
@@ -251,6 +250,9 @@ main section {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+  }
+  .navbar .top .nav-title h1 {
+    font-size: 2rem;
   }
   .navbar .top .menu-box {
     display: block;
