@@ -1,64 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Muzammil | Portfolio</title>
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="./styles/style.css">
-</head>
-<body>
-  <header class="navbar">
-    <div class="top">
-      <div class="nav-title">
-        <h1>Muzammil</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muzammil | Portfolio</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="top">
+        <div class="nav-title">
+          <h1>Muzammil</h1>
+        </div>
+        <div class="menu-box">
+          <i class="bi bi-list" id="navMenu"></i>
+        </div>
       </div>
-      <div class="menu-box">
-        <i class="bi bi-list" id="navMenu"></i>
-      </div>  
-    </div>
-    
-    <div class="nav-links">
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-    </div>
-  </header>
-  <main>
-    <section id="profile">
-      <div class="profile-img"></div>
-      <div class="profile-info">
-        <h2 class="typing-demo">Muzammil</h2>
-        <p>DOB : 13-11-2005</p>
-        <p>Skills : <span class="skill-box">Web Design</span> <span class="skill-box">Python</span></p>
-        
-      </div>
-    </section>
-    <section id="certificates">
-      <div class="certi-box">
-        <img src="./Images/fake-certi-img.jpeg" alt="certificate">
-        <h4 class="certi-title">FreeCodeCamp 1</h4>
-      </div>
-      <div class="certi-box">
-        <img src="./Images/fake-certi-img.jpeg" alt="certificate">
-        <h4 class="certi-title">FreeCodeCamp 2</h4>
-      </div>
-      <div class="certi-box">
-        <img src="./Images/fake-certi-img.jpeg" alt="certificate">
-        <h4 class="certi-title">FreeCodeCamp 3</h4>
-      </div>
-      <br>
-      <button id="moreCerti">More...</button>
-    </section>
 
-    <section id="projects">
-      hhf
-    </section>
-  </main>
+      <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+    </header>
+    <main>
+      <section id="profile">
+        <div class="profile-img"></div>
+        <div class="profile-info">
+          <h2 class="typing-demo">Muzammil</h2>
+          <p>DOB : 13-11-2005</p>
+          <p>
+            Skills : <span class="skill-box">Web Design</span>
+            <span class="skill-box">Python</span>
+          </p>
+        </div>
+      </section>
+      <section id="certificates">
+        <h2 class="sec-title">Certifications</h2>
+        <div class="grid-wraper">
+          <div class="certi-box">
+            <img src="./Images/fake-certi-img.jpeg" alt="certificate" class="certi-img"/>
+            <h4 class="certi-title">FreeCodeCamp 1</h4>
+          </div>
+          <div class="certi-box">
+            <img src="./Images/fake-certi-img.jpeg" alt="certificate" class="certi-img"/>
+            <h4 class="certi-title">FreeCodeCamp 2</h4>
+          </div>
+          <div class="certi-box">
+            <img src="./Images/fake-certi-img.jpeg" alt="certificate" class="certi-img"/>
+            <h4 class="certi-title">FreeCodeCamp 3</h4>
+          </div>
+        </div>
+       
+        <div id="certi-view" class="certi-view">
+          <div class="wraper">
+            <span id="close" title="close">&times;</span>
+            <img alt="Certificate Image" id="view-img" />
+            <h3 id="view-title">Title</h3>
+          </div>
+        </div>
+        <button id="moreCerti">More...</button>
+      </section>
 
-  <!-- scripts -->
-  <script src="./scripts/index.js"></script>
-  <script type="module" src="./scripts/cerify.js"></script>
-  <script src="./scripts/navbar.js" type="module"></script>
-</body>
+      <section id="projects">
+        <h2 class="sec-title">Projects</h2>
+      </section>
+    </main>
+
+    <!-- scripts -->
+    <script src="./scripts/index.js"></script>
+    <script type="module" src="./scripts/cerify.js"></script>
+    <script src="./scripts/navbar.js" type="module"></script>
+  </body>
 </html>
