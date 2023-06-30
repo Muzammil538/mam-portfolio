@@ -282,7 +282,7 @@ main section {
   }
   .navbar .nav-links a {
     padding: 1rem;
-    font-size: .2rem;
+    font-size: .2em;
   }
 
   @keyframes navLinksMove {
