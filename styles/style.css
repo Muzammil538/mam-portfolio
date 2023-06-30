@@ -283,6 +283,7 @@ main section {
   .navbar .nav-links a {
     padding: 1rem;
     font-size: 10px;
+    color: red;
   }
 
   @keyframes navLinksMove {
