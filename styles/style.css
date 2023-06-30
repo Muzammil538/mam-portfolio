@@ -303,23 +303,23 @@ main section {
     justify-content: space-evenly;
   }
   .profile-img {
-    width: 20rem;
-    height: 20rem;
+    width: 200px;
+    height: 200px;
   }
   .profile-info {
-    padding: 2rem;
+    padding: 24px;
     font-size: .85rem;
     line-break: strict;
-    line-height: 3rem;
+    line-height: 30px;
   }
   .typing-demo {
-    font-size: 1.5rem;
+    font-size: 30px;
   }
 
   /* Certificates */
   #certificates {
     background-color: #98eecc;
-    padding: 2rem;
+    padding: 24px;
     
   }
   #certificates .grid-wraper{
@@ -328,6 +328,6 @@ main section {
     justify-items:center;
     align-items: center;
     justify-self: center;
-    row-gap: 3.5rem;
+    row-gap: 40px;
   }
 }
