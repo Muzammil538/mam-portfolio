@@ -303,17 +303,17 @@ main section {
     justify-content: space-evenly;
   }
   .profile-img {
-    width: 36rem;
-    height: 36rem;
+    width: 20rem;
+    height: 20rem;
   }
   .profile-info {
     padding: 2rem;
-    font-size: 1.2rem;
+    font-size: .85rem;
     line-break: strict;
     line-height: 3rem;
   }
   .typing-demo {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
 
   /* Certificates */
