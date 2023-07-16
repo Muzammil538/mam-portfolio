@@ -49,3 +49,19 @@ function updateInfo() {
 };
 updateInfo();
 setInterval(updateInfo , durationTime);
+
+// Pop Div 
+const popDivs = document.querySelectorAll(".pop-div");
+const boxViewer = document.querySelector(".box-viewer")
+
+for (let i = 0; i < popDivs.length; i++) {
+  const ele = popDivs[i];
+  ele.addEventListener("click", ()=>{
+    boxViewer.classList.add("active");
+  });
+  
+}
+
+function closePop(params) {
+  boxViewer.classList.remove("active")
+}

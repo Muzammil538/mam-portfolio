@@ -12,6 +12,7 @@
   --high-light: #f6f1f1;
   --navlink-hover: #146c94;
   --banner-txt: #146c94;
+  --box-title-hover: #0A6EBD;
 }
 
 a {
@@ -76,6 +77,13 @@ header {
 }
 main {
   width: 100%;
+  position: relative;
+  & .section-title {
+    border-bottom: 2px solid #b3b3b3;
+    width: 100%;
+    text-align: center;
+    padding: 8px;
+  }
   /* Banner */
   & .banner {
     width: 100%;
@@ -155,6 +163,72 @@ main {
         align-items: flex-start;
       }
     }
+  }
+  & .certificates {
+    padding: 30px;
+    width: 100%;
+
+    & .cerificate-wrap{
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      /* flex-wrap: wrap; */
+      /* width: 90%; */
+      padding: 20px;
+      gap: 70px;
+
+      & .box {
+        display: flex;
+        width: 300px;
+        height: 300px;
+        flex-direction: column;
+        box-shadow: 20px 20px 40px #8a8a8a, -20px -20px 40px #ffffff;
+        border-radius: 10px;
+        padding: 10px;
+        justify-content: space-between;
+        cursor: pointer;
+
+        & .pop-div {
+          text-align: right;
+          cursor: pointer;
+        }
+        & .box-img {
+          padding: 8px auto;
+          & img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        & .box-title:hover {
+          color: var(--box-title-hover);
+        }
+      }
+    }
+    & .box-viewer{
+      display: none;
+    }
+    & .box-viewer.active {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 300px;
+      height: 300px;
+      text-align: center;
+      background-color: #213363;
+      color: #fff;
+      & #closepopbtn {
+        padding: 10px 20px; 
+        background-color: red;
+        color: #fff;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        margin: 20px auto;
+      }
+    }
+    
   }
 }
 
@@ -304,6 +378,34 @@ main {
           gap: 20px;
           align-items: flex-start;
         }
+      }
+    }
+    & .certificates {
+      padding: 15px;
+      position: relative;
+
+      & .cerificate-wrap {
+        flex-direction: column;
+        gap: 50px;
+
+        & .box {
+          box-shadow: 0px 20px 20px -5px #8e8e8e;
+        }
+      }
+      & .box-viewer{
+        display: none;
+      }
+      & .box-viewer.active {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 300px;
+        height: 300px;
+        text-align: center;
+        background-color: #213363;
+        color: #fff;
       }
     }
   }
