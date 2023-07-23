@@ -14,6 +14,10 @@
   --banner-txt: #146c94;
   --box-title-hover: #0A6EBD;
 }
+html , body {
+  height: 100%;
+  width: 100%;
+}
 
 a {
   text-decoration: none;
@@ -23,67 +27,60 @@ a {
 /* DESKTOP DESIGN */
 header {
   width: 100%;
-  /* height: 60px; */
+  height: 60px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  & .nav-top {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    & .menu-container {
-      display: none;
-    }
-    width: 50%;
+  padding: 1vw 3vw;
+  /* background-color: cadetblue; */
+  & .menu-toggle{
+    display: none;
   }
-  & .navbar-links {
+  & .nav-menu-mobile{
+    display: none;
+  }
+  & .brand-title{
+    font-size: 2.5vw;
+    text-decoration: none;
+  }
+  & .nav-menu-desk {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
-    gap: 80px;
-    & .lvl0 {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 30px;
-      & .link {
-        padding: 6px;
-      }
-      & .link:hover {
-        color: var(--navlink-hover);
+    gap: 1vw;
+
+    & .nmd-link {
+      padding: .5vw 1vw;
+      /* background-color: darkgreen; */
+      &:hover{
+        color: #0A6EBD;
       }
     }
-    & .lvl1 {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 30px;
-      & .link {
-        padding: 6px;
-      }
-      & .link:hover {
-        color: var(--navlink-hover);
-      }
-      & .high-light {
-        padding: 8px;
-        background-color: var(--high-light-bg);
-        color: var(--high-light) !important;
-        border-radius: 8px;
+
+    & .nav-btn {
+      padding: .5vw 1.5vw;
+      background-color: cornflowerblue;
+      border-radius: 5px;
+      color: #f0f0f0;
+      margin-left: 1.5vw;
+      &:hover{
+        background-color: rgba(100, 148, 237, 0.813);
+        color: #fff;
       }
     }
   }
 }
+.section-title {
+  border-bottom: 2px solid #b3b3b3;
+  width: 100%;
+  text-align: center;
+  padding: 2vw;
+  color: #0A6EBD;
+}
 main {
   width: 100%;
   position: relative;
-  & .section-title {
-    border-bottom: 2px solid #b3b3b3;
-    width: 100%;
-    text-align: center;
-    padding: 8px;
-  }
+
   /* Banner */
   & .banner {
     width: 100%;
