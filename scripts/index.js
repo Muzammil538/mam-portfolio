@@ -1,16 +1,16 @@
 // navbar
-// const menuIcon = document.querySelector("#menuicon");
-// const navLinks = document.querySelector(".navbar-links");
-// menuIcon.addEventListener("click", ()=>{
-//   navLinks.classList.toggle("active");
-//   if(menuIcon.classList.contains("bi-list")){
-//     menuIcon.classList.remove("bi-list")
-//     menuIcon.classList.add("bi-x-lg")
-//   }else{
-//     menuIcon.classList.remove("bi-x-lg")
-//     menuIcon.classList.add("bi-list")
-//   }
-// });
+const menuIcon = document.querySelector(".menu-toggle i");
+const navLinks = document.querySelector(".nav-menu-desk");
+menuIcon.addEventListener("click", ()=>{
+  navLinks.classList.toggle("active");
+  if(menuIcon.classList.contains("bi-list")){
+    menuIcon.classList.remove("bi-list")
+    menuIcon.classList.add("bi-x-lg")
+  }else{
+    menuIcon.classList.remove("bi-x-lg")
+    menuIcon.classList.add("bi-list")
+  }
+});
 
 // banner 
 const bannerText = document.querySelector("#txt");
