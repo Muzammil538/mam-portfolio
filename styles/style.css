@@ -293,8 +293,9 @@ footer {
           width: 70%;
           border: none;
           outline: none;
-          padding: 0.3rem 0.85rem;
+          padding: 0.5rem 0.85rem;
           border-radius: 4px;
+          font-size: medium;
         }
         & textarea {
           width: 70%;
@@ -302,6 +303,7 @@ footer {
           outline: none;
           padding: 0.2rem 0.65rem;
           border-radius: 4px;
+          font-size: medium;
         }
         & button {
           cursor: pointer;
